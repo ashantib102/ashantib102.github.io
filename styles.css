@@ -21,9 +21,9 @@
   
 
 *{
-   margin= 0%;
-   padding=0%;
-   box-sizing: border-box; 
+   
+   padding=0;
+   box-sizing:border-box; 
    font-family:"Josefin Sans", sans-serif;
    font-weight: 400;
 }
@@ -52,8 +52,11 @@ body{
 }
 
 .logo{
+    background: linear-gradient(#1e30f3 0%, #e21e80 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     font-size: 25px;
-    color:#ffff;
     text-decoration: none;
     font-weight: 600;
     cursor: default;
@@ -124,11 +127,17 @@ body{
 
 .home-content{
     max-width:500px;
-    color:#fff
+    color:#fff;
+
+    
 
 }
 
 .home-content h3{
+    background: linear-gradient(#1e30f3 0%, #e21e80 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     font-size: 56px;
     font-weight: 700;
     margin-top: -1rem;
@@ -136,7 +145,6 @@ body{
     opacity:0;
     animation: slideRight 1s ease forwards; 
     animation-delay: 0.2s;
-    
 
 }
 
@@ -200,6 +208,7 @@ body{
 
 .btn{
     display: inline-block;
+    text-decoration: none;
     padding: 12px 28px;
     background: #1e30f3;
     background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
@@ -288,9 +297,14 @@ body{
 }
 
 .portfolio h2{
+    background: linear-gradient(#1e30f3 0%, #e21e80 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     margin-top: 100px;
     margin-bottom: 4rem;
     font-size: 40px;
+    font-weight: 700;
     text-align: center;
     position: relative;
 }
@@ -304,6 +318,8 @@ body{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    margin-left: 70px;
+    margin-right: 70px ;
     gap: 2.5rem;
 }
 
@@ -311,6 +327,7 @@ body{
     position: relative;
     box-shadow: 0 0 1rem #9913bb;
     border-radius: 2rem;
+    max-width: 100%;
     overflow: hidden;
     display: flex;
 }
@@ -346,8 +363,9 @@ body{
 }
 
 .portfolio-layer h4{
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
+    margin-top: 20px;
 }
 
 .portfolio-layer p{
