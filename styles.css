@@ -412,6 +412,22 @@ body{
     
     }
 
+    .home-content{
+        max-width:20rem;
+        color:#fff;
+        position: relative;
+     
+    
+    }
+
+    .home-content p{
+        font-size: 0.95rem;
+        animation: slideLeft 1s ease forwards; 
+        animation-delay: 0.2s;
+        position: relative;
+    }
+    
+
     .home-img img{
         display: inline-flex;
         position: relative;
