@@ -64,6 +64,22 @@ body{
     animation: slideRight 1s ease forwards; 
 }
 
+.sound {
+    margin-top: -20px;
+    margin-left:1px;
+    align-items: center;
+    width: 10px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    animation: slideTop 1s ease forwards; 
+    animation-delay: 0.4s;
+
+}
+
+
 .navbar {
     font-size: 20px;
     color: #fff;
@@ -102,7 +118,7 @@ body{
     font-weight: 600;
     color: #fff;
     margin-right: -200px;
-    border-radius: 0.8rem;
+    border-radius: 40px;
     display:inline-block;
     box-shadow: 0 0 20px #1e30f3;
     font-family: "Plus Jakarta Sans";
