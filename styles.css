@@ -142,12 +142,13 @@ body{
 .home-content{
     max-width:31.25rem;
     color:#fff;
-
-    
+    position: relative;
+ 
 
 }
 
 .home-content h3{
+    position: relative;
     background: linear-gradient(#1e30f3 0%, #e21e80 100%);
     -webkit-background-clip: text;
     background-clip: text;
@@ -170,6 +171,7 @@ body{
     opacity:0;
     animation: slideRight 1s ease forwards; 
     animation-delay: 0.2s;
+    position: relative;
 
 }
 
@@ -179,15 +181,16 @@ body{
 }
 
 .home-content p{
-    min-height: 6.25rem;
     font-size: 1.25rem;
     animation: slideLeft 1s ease forwards; 
     animation-delay: 0.2s;
+    position: relative;
 }
 
 
 .home-img img{
     display: inline-flex;
+    position: relative;
     max-width: 31.25rem;
     margin-right: -6.25rem;
     border-radius: 1.875rem;
