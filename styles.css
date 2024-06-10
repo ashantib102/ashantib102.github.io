@@ -590,3 +590,741 @@ body{
 
 }
 
+@media only screen and (min-width: 501px) and (max-width:700px){
+
+
+    
+    .header{
+        position:relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: #fff;
+        padding: 1.563rem 10%;
+        background: transparent;
+        display: inline-block;
+        align-items: center;
+        z-index: 100;
+    }
+
+   
+
+    .navbar .badge{
+        display:none;
+        font-size: 1rem;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        align-items: center;
+        padding: 10px 10%;
+        transition: 0.3s;
+        opacity:0;
+        animation: slideTop 1s ease forwards; 
+    
+    }
+
+    .home{
+        position: relative;
+        width: 100%;
+        top:-120px;
+        display: inline-block;
+        height: auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10% 0;
+    
+    }
+
+    .home-content h3{
+        font-size:4rem;
+        font-weight:700;
+        margin:-3px 0;
+        opacity:0;
+        animation: slideRight 1s ease forwards; 
+        animation-delay: 0.2s;
+        position: relative;
+    
+    }
+
+    .home-content h1{
+        font-size:2.3rem;
+        font-weight:700;
+        margin:-3px 0;
+        opacity:0;
+        animation: slideRight 1s ease forwards; 
+        animation-delay: 0.2s;
+        position: relative;
+    
+    }
+
+    .home-content{
+        max-width:25rem;
+        color:#fff;
+        position: relative;
+     
+    
+    }
+
+    .home-content p{
+        font-size: 1.4rem;
+        animation: slideLeft 1s ease forwards; 
+        animation-delay: 0.2s;
+        position: relative;
+    }
+    
+
+    .home-img img{
+        top:70px;
+        align-items: center;
+        display: block;
+        position: relative;
+        max-width: 25rem;
+        border-radius: 1.875rem;
+    }
+
+
+    
+    .portfolio h2{
+        background: linear-gradient(#1e30f3 0%, #e21e80 100%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: 2.7rem;
+        font-weight: 700;
+        text-align: center;
+        position: relative;
+    }
+    
+    
+    .portfolio-container{
+        width: 25rem;
+        display:inline-block;
+        margin-left:50px ;
+    }
+    
+    .portfolio-container .portfolio-box{
+        position: relative;
+        box-shadow: 0 0 1rem #9913bb;
+        border-radius: 2rem;
+        max-width: 100%;
+        margin-top: 35px;
+        overflow: hidden;
+        display: flex;
+    }
+    
+    .portfolio-box img{
+        width:100%;
+        transition: 0.5s ease;
+    }
+    
+    .portfolio-box:hover img{
+        transform: scale(1.7);
+    }
+    
+    .portfolio-box .portfolio-layer{
+        position: absolute;
+        bottom:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background:linear-gradient(135deg, #1e30f3 0%, #e21e80 100%); ;
+        display: flex;
+        text-decoration: none;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+        text-align:center ;
+        padding: 0 4rem;
+        transform: translateY(100%);
+        transition: 0.5 ease;
+    }
+    
+    .portfolio-box:hover .portfolio-layer{
+        transform: translateY(0);
+    }
+    
+    .portfolio-layer a{
+        text-decoration: none;
+    }
+    
+    
+    .portfolio-layer a h4{
+        font-size: 1.563rem;
+        color: white;
+        text-decoration: none;
+        position: relative;
+    }
+    
+    .portfolio-layer a p{
+        
+        font-size: 1.063rem;
+        color:white;
+        text-decoration: none;
+        position: relative;
+        
+    }
+
+}
+
+@media only screen and (min-width: 701px) and (max-width:800px){
+
+
+    
+        .header{
+            position:relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: #fff;
+            padding: 1.563rem 10%;
+            background: transparent;
+            display: inline-block;
+            align-items: center;
+            z-index: 100;
+        }
+    
+       
+    
+        .navbar .badge{
+            display:none;
+            font-size: 1rem;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            align-items: center;
+            padding: 10px 10%;
+            transition: 0.3s;
+            opacity:0;
+            animation: slideTop 1s ease forwards; 
+        
+        }
+    
+        .home{
+            position: relative;
+            width: 100%;
+            top:-120px;
+            display: inline-block;
+            height: auto;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 10% 0;
+        
+        }
+    
+        .home-content h3{
+            font-size:4.5rem;
+            font-weight:700;
+            margin:-3px 0;
+            opacity:0;
+            animation: slideRight 1s ease forwards; 
+            animation-delay: 0.2s;
+            position: relative;
+        
+        }
+    
+        .home-content h1{
+            font-size:2.5rem;
+            font-weight:700;
+            margin:-3px 0;
+            opacity:0;
+            animation: slideRight 1s ease forwards; 
+            animation-delay: 0.2s;
+            position: relative;
+        
+        }
+    
+        .home-content{
+            max-width:100rem;
+            color:#fff;
+            position: relative;
+         
+        
+        }
+    
+        .home-content p{
+            font-size: 1.6rem;
+            animation: slideLeft 1s ease forwards; 
+            animation-delay: 0.2s;
+            position: relative;
+        }
+        
+    
+        .home-img img{
+            top:70px;
+            align-items: center;
+            display: block;
+            position: relative;
+            max-width: 35rem;
+            border-radius: 1.875rem;
+        }
+    
+    
+        
+        .portfolio h2{
+            background: linear-gradient(#1e30f3 0%, #e21e80 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-size: 2.9rem;
+            font-weight: 700;
+            text-align: center;
+            position: relative;
+        }
+        
+        
+        .portfolio-container{
+            width: 27rem;
+            display:inline-block;
+            margin-left:140px ;
+        }
+        
+        .portfolio-container .portfolio-box{
+            position: relative;
+            box-shadow: 0 0 1rem #9913bb;
+            border-radius: 2rem;
+            max-width: 100%;
+            margin-top: 35px;
+            overflow: hidden;
+            display: flex;
+        }
+        
+        .portfolio-box img{
+            width:100%;
+            transition: 0.5s ease;
+        }
+        
+        .portfolio-box:hover img{
+            transform: scale(1.7);
+        }
+        
+        .portfolio-box .portfolio-layer{
+            position: absolute;
+            bottom:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:linear-gradient(135deg, #1e30f3 0%, #e21e80 100%); ;
+            display: flex;
+            text-decoration: none;
+            justify-content:center;
+            align-items: center;
+            flex-direction: column;
+            text-align:center ;
+            padding: 0 4rem;
+            transform: translateY(100%);
+            transition: 0.5 ease;
+        }
+        
+        .portfolio-box:hover .portfolio-layer{
+            transform: translateY(0);
+        }
+        
+        .portfolio-layer a{
+            text-decoration: none;
+        }
+        
+        
+        .portfolio-layer a h4{
+            font-size: 1.563rem;
+            color: white;
+            text-decoration: none;
+            position: relative;
+        }
+        
+        .portfolio-layer a p{
+            
+            font-size: 1.063rem;
+            color:white;
+            text-decoration: none;
+            position: relative;
+            
+        }
+    
+    
+    
+    
+    
+    
+
+    
+    }
+
+    @media only screen and (min-width: 801px) and (max-width:900px){
+
+
+    
+        .header{
+            position:relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: #fff;
+            padding: 1.563rem 10%;
+            background: transparent;
+            display: inline-block;
+            align-items: center;
+            z-index: 100;
+        }
+    
+       
+    
+        .navbar .badge{
+            display:none;
+            font-size: 1rem;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            align-items: center;
+            padding: 10px 10%;
+            transition: 0.3s;
+            opacity:0;
+            animation: slideTop 1s ease forwards; 
+        
+        }
+    
+        .home{
+            position: relative;
+            width: 100%;
+            top:-120px;
+            display: inline-block;
+            height: auto;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 10% 0;
+        
+        }
+    
+        .home-content h3{
+            font-size:4.5rem;
+            font-weight:700;
+            margin:-3px 0;
+            opacity:0;
+            animation: slideRight 1s ease forwards; 
+            animation-delay: 0.2s;
+            position: relative;
+        
+        }
+    
+        .home-content h1{
+            font-size:2.5rem;
+            font-weight:700;
+            margin:-3px 0;
+            opacity:0;
+            animation: slideRight 1s ease forwards; 
+            animation-delay: 0.2s;
+            position: relative;
+        
+        }
+    
+        .home-content{
+            max-width:100rem;
+            color:#fff;
+            position: relative;
+         
+        
+        }
+    
+        .home-content p{
+            font-size: 1.6rem;
+            animation: slideLeft 1s ease forwards; 
+            animation-delay: 0.2s;
+            position: relative;
+        }
+        
+    
+        .home-img img{
+            top:70px;
+            align-items: center;
+            display: block;
+            position: relative;
+            max-width: 32rem;
+            border-radius: 1.875rem;
+        }
+    
+    
+        
+        .portfolio h2{
+            background: linear-gradient(#1e30f3 0%, #e21e80 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-size: 3.2rem;
+            font-weight: 700;
+            text-align: center;
+            position: relative;
+        }
+        
+        
+        .portfolio-container{
+            width: 30rem;
+            display:inline-block;
+            margin-left:170px ;
+        }
+        
+        .portfolio-container .portfolio-box{
+            position: relative;
+            box-shadow: 0 0 1rem #9913bb;
+            border-radius: 2rem;
+            max-width: 100%;
+            margin-top: 35px;
+            overflow: hidden;
+            display: flex;
+        }
+        
+        .portfolio-box img{
+            width:100%;
+            transition: 0.5s ease;
+        }
+        
+        .portfolio-box:hover img{
+            transform: scale(1.7);
+        }
+        
+        .portfolio-box .portfolio-layer{
+            position: absolute;
+            bottom:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:linear-gradient(135deg, #1e30f3 0%, #e21e80 100%); ;
+            display: flex;
+            text-decoration: none;
+            justify-content:center;
+            align-items: center;
+            flex-direction: column;
+            text-align:center ;
+            padding: 0 4rem;
+            transform: translateY(100%);
+            transition: 0.5 ease;
+        }
+        
+        .portfolio-box:hover .portfolio-layer{
+            transform: translateY(0);
+        }
+        
+        .portfolio-layer a{
+            text-decoration: none;
+        }
+        
+        
+        .portfolio-layer a h4{
+            font-size: 1.563rem;
+            color: white;
+            text-decoration: none;
+            position: relative;
+        }
+        
+        .portfolio-layer a p{
+            
+            font-size: 1.063rem;
+            color:white;
+            text-decoration: none;
+            position: relative;
+            
+        }
+    
+    
+    
+    
+    
+    
+
+    
+    }
+
+    @media only screen and (min-width: 901px) and (max-width:1000px){
+
+
+    
+        .header{
+            position:relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: #fff;
+            padding: 1.563rem 10%;
+            background: transparent;
+            display: inline-block;
+            align-items: center;
+            z-index: 100;
+        }
+    
+       
+    
+        .navbar .badge{
+            display:none;
+            font-size: 1rem;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            align-items: center;
+            padding: 10px 10%;
+            transition: 0.3s;
+            opacity:0;
+            animation: slideTop 1s ease forwards; 
+        
+        }
+    
+        .home{
+            position: relative;
+            width: 100%;
+            top:-120px;
+            display: inline-block;
+            height: auto;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 10% 0;
+        
+        }
+    
+        .home-content h3{
+            font-size:4.5rem;
+            font-weight:700;
+            margin:-3px 0;
+            opacity:0;
+            animation: slideRight 1s ease forwards; 
+            animation-delay: 0.2s;
+            position: relative;
+        
+        }
+    
+        .home-content h1{
+            font-size:2.5rem;
+            font-weight:700;
+            margin:-3px 0;
+            opacity:0;
+            animation: slideRight 1s ease forwards; 
+            animation-delay: 0.2s;
+            position: relative;
+        
+        }
+    
+        .home-content{
+            max-width:100rem;
+            color:#fff;
+            position: relative;
+         
+        
+        }
+    
+        .home-content p{
+            font-size: 1.6rem;
+            animation: slideLeft 1s ease forwards; 
+            animation-delay: 0.2s;
+            position: relative;
+        }
+        
+    
+        .home-img img{
+            top:70px;
+            align-items: center;
+            display: block;
+            position: relative;
+            max-width: 32rem;
+            border-radius: 1.875rem;
+
+        }
+    
+    
+        
+        .portfolio h2{
+            background: linear-gradient(#1e30f3 0%, #e21e80 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-size: 3.2rem;
+            font-weight: 700;
+            text-align: center;
+            position: relative;
+        }
+        
+        
+        .portfolio-container{
+            display:grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            /*margin-left: 4.375rem;
+            margin-right: 4.375rem ;*/
+            gap: 1.8rem;
+            width: 57rem;
+            margin-left: 20px;
+        }
+        
+        .portfolio-container .portfolio-box{
+            position: relative;
+            box-shadow: 0 0 1rem #9913bb;
+            border-radius: 2rem;
+            max-width: 100%;
+            margin-top: 35px;
+            overflow: hidden;
+            display: flex;
+        }
+        
+        .portfolio-box img{
+            width:100%;
+            transition: 0.5s ease;
+        }
+        
+        .portfolio-box:hover img{
+            transform: scale(1.7);
+        }
+        
+        .portfolio-box .portfolio-layer{
+            position: absolute;
+            bottom:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:linear-gradient(135deg, #1e30f3 0%, #e21e80 100%); ;
+            display: flex;
+            text-decoration: none;
+            justify-content:center;
+            align-items: center;
+            flex-direction: column;
+            text-align:center ;
+            padding: 0 4rem;
+            transform: translateY(100%);
+            transition: 0.5 ease;
+        }
+        
+        .portfolio-box:hover .portfolio-layer{
+            transform: translateY(0);
+        }
+        
+        .portfolio-layer a{
+            text-decoration: none;
+        }
+        
+        
+        .portfolio-layer a h4{
+            font-size: 1.1rem;
+            color: white;
+            text-decoration: none;
+            position: relative;
+        }
+        
+        .portfolio-layer a p{
+            
+            font-size: 0.85rem;
+            color:white;
+            text-decoration: none;
+            position: relative;
+            
+        }
+    
+
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
