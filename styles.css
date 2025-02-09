@@ -167,6 +167,12 @@ body{
 
 }
 
+.email-link {
+    color: inherit;  /* Matches the surrounding text color */
+    text-decoration: none;  /* Removes the underline */
+    cursor: text;  /* Makes it look like regular text (optional) */
+}
+
 
 .home-content h1{
     font-size:2.5rem;
