@@ -7,71 +7,9 @@
     <link rel="stylesheet" href="multimedia.css" />
   </head>
   <body>
-    <section class="slider-container">
-      <div class="slider-images">
-        <div class="slider-img">
-          <img src="project1.webp" alt="1" />
-          <h1></h1> <!-- Empty h1 -->
-          <div class="details">
-            <h2>Project #1</h2>
-            <p></p>
-          </div>
-        </div>
-        <div class="slider-img">
-          <img src="project2.webp" alt="2" />
-          <h1></h1> <!-- Empty h1 -->
-          <div class="details">
-            <h2>Project #2</h2>
-            <p></p>
-          </div>
-        </div>
-        <div class="slider-img">
-          <img src="project3.webp" alt="3" />
-          <h1></h1> <!-- Empty h1 -->
-          <div class="details">
-            <h2>Project #3</h2>
-            <p></p>
-          </div>
-        </div>
-        <div class="slider-img active">
-          <img src="project4.webp" alt="4" />
-          <h1></h1> <!-- Empty h1 -->
-          <div class="details">
-            <h2>Project #4</h2>
-            <p></p>
-          </div>
-        </div>
-        <div class="slider-img">
-          <img src="project5.webp" alt="5" />
-          <h1></h1> <!-- Empty h1 -->
-          <div class="details">
-            <h2>Project #5</h2>
-            <p></p>
-          </div>
-        </div>
-        <div class="slider-img">
-          <img src="project3.webp" alt="6" />
-          <h1></h1> <!-- Empty h1 -->
-          <div class="details">
-            <h2>Project #6</h2>
-            <p></p>
-          </div>
-        </div>
-      </div>
-    </section>
+    
+    <a href="https://github.com/ashantib102/CISC3610SceneProject">Scene Project</a>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const sliderImages = document.querySelectorAll('.slider-img');
-        
-        sliderImages.forEach((image) => {
-          image.addEventListener('click', function () {
-            sliderImages.forEach(img => img.classList.remove('active'));
-            image.classList.add('active');
-          });
-        });
-      });
-    </script>
   </body>
 </html>
 
