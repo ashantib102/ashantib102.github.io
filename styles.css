@@ -1122,7 +1122,7 @@ body{
         
         .portfolio-layer a p{
             
-            font-size: 1.063rem;
+            font-size: 1.1rem;
             color:white;
             text-decoration: none;
             position: relative;
@@ -1138,7 +1138,7 @@ body{
     
     }
 
-    @media only screen and (min-width: 901px) and (max-width:1000px){
+    @media only screen and (min-width: 901px) and (max-width:1200px){
 
 
     
@@ -1221,15 +1221,22 @@ body{
         }
         
     
-        .home-img img{
-            top:70px;
-            align-items: center;
-            display: block;
-            position: relative;
+        .home-img {
+            display: flex;
+            justify-content: center; /* Centers horizontally */
+            align-items: center; /* Centers vertically */
+            width: 100%; /* Ensures it takes full width */
+        }
+        
+        .home-img img {
+            top: 70px;
             max-width: 32rem;
             border-radius: 1.875rem;
-
+            display: block;
+            margin: 0 auto; /* Centers horizontally */
+            position: relative;
         }
+        
     
     
         
@@ -1244,19 +1251,17 @@ body{
             position: relative;
         }
         
-        
-        .portfolio-container{
-            display:grid;
-            grid-template-columns: repeat(3, 1fr);
-            align-items: center;
-            /*margin-left: 4.375rem;
-            margin-right: 4.375rem ;*/
+        .portfolio-container {
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            flex-wrap: wrap; /* Allow items to wrap on smaller screens */
             gap: 1.8rem;
             width: 57rem;
-            margin-left: 20px;
+            margin: 0 auto; /* Center the container */
         }
-        
-        .portfolio-container .portfolio-box{
+    
+        .portfolio-container .portfolio-box {
             position: relative;
             box-shadow: 0 0 1rem #9913bb;
             border-radius: 2rem;
@@ -1264,8 +1269,10 @@ body{
             margin-top: 35px;
             overflow: hidden;
             display: flex;
+            justify-content: center; /* Center content inside */
+            align-items: center;
         }
-        
+    }
         .portfolio-box img{
             width:100%;
             transition: 0.5s ease;
@@ -1303,7 +1310,7 @@ body{
         
         
         .portfolio-layer a h4{
-            font-size: 1.1rem;
+            font-size: 1.5rem;
             color: white;
             text-decoration: none;
             position: relative;
@@ -1311,7 +1318,7 @@ body{
         
         .portfolio-layer a p{
             
-            font-size: 0.85rem;
+            font-size: 1.1rem;
             color:white;
             text-decoration: none;
             position: relative;
