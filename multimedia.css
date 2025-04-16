@@ -19,219 +19,101 @@
   font-style: normal;
 }
 
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background: #000000;
+  color: #fff;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
 }
 
-body {
+.portfolio-section {
   background: #000000;
+  color: #fff;
+  animation: slideTop 1s;
+  position: relative;
+  padding: 2rem 0;
 }
 
-.header {
+.section-heading {
+  background: linear-gradient(#1e30f3 0%, #e21e80 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
   position: relative;
-  top: 0;
+  margin-bottom: 4rem;
+}
+
+.portfolio-item {
+  position: relative;
+  box-shadow: 0 0 1rem #9913bb;
+  border-radius: 2rem;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 2rem;
+  height: 250px;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.7);
+}
+
+.portfolio-layer {
+  position: absolute;
+  bottom: 0;
   left: 0;
   width: 100%;
-  box-shadow: #fff;
-  padding: 1.563rem 10%;
-  background: transparent;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  z-index: 100;
-}
-
-.header :hover {
-  color: #9913bb;
-}
-
-.logo {
-  background: linear-gradient(#1e30f3 0%, #e21e80 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 1.563rem;
-  text-decoration: none;
-  font-weight: 600;
-  cursor: default;
-  opacity: 0;
-  animation: slideRight 1s ease forwards;
-}
-
-.sound {
-  margin-top: -1rem;
-  margin-left: 1px;
-  align-items: center;
-  width: 10px;
-  display: inline-block;
-  text-decoration: none;
-  border-radius: 2.5rem;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  animation: slideTop 1s ease forwards;
-  position: relative;
-}
-
-.navbar {
-  font-size: 1.25rem;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  margin-left: 18.75rem;
-  padding: 80px 10%;
-  transition: 0.3s;
-  opacity: 0;
-  animation: slideTop 1s ease forwards;
-}
-
-.navbar :hover {
-  color: #ffff;
-}
-
-.bg-gradient-primary-to-secondary {
-  background: #1e30f3;
+  height: 100%;
   background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
-}
-
-.text-white {
-  --bs-text-opacity: 1;
-  color: #fff;
-}
-.mb-4 {
-  margin-bottom: 1.5rem !important;
-}
-.badge {
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.5em;
-  font-size: 1.563rem;
-  font-weight: 600;
-  color: #fff;
-  margin-right: -12.5rem;
-  border-radius: 2.5rem;
-  display: inline-block;
-  box-shadow: 0 0 20px #1e30f3;
-  font-family: "Plus Jakarta Sans";
-  line-height: 1.4;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  position: relative;
-}
-
-.home {
-  position: relative;
-  width: 100%;
   display: flex;
-  height: auto;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 50px;
-}
-
-.home-content {
-  max-width: 30rem;
-  color: #fff;
-  position: relative;
-}
-
-.home-content h3 {
-  position: relative;
-  background: linear-gradient(#1e30f3 0%, #e21e80 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-top: -1rem;
-  margin-bottom: 1rem !important;
-  opacity: 0;
-  animation: slideRight 1s ease forwards;
-  animation-delay: 0.2s;
-}
-
-.email-link {
-  color: inherit; /* Matches the surrounding text color */
-  text-decoration: none; /* Removes the underline */
-  cursor: text; /* Makes it look like regular text (optional) */
-}
-
-.home-content h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin: -3px 0;
-  opacity: 0;
-  animation: slideRight 1s ease forwards;
-  animation-delay: 0.2s;
-  position: relative;
-}
-
-.home-content h1:hover {
-  color: #9913bb;
-}
-
-.home-content p {
-  font-size: 1.25rem;
-  animation: slideLeft 1s ease forwards;
-  animation-delay: 0.2s;
-  position: relative;
-}
-
-.home-img img {
-  display: inline-flex;
-  position: relative;
-  max-width: 31.25rem;
-  margin-right: 0rem;
-  border-radius: 1.875rem;
-  animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
-  animation-delay: 0.2s, 3s;
-}
-
-.social-media a {
-  display: inline-flex;
+  text-decoration: none;
   justify-content: center;
   align-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  font-size: 1.25rem;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 4rem;
+  transform: translateY(100%);
+  transition: 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-layer {
+  transform: translateY(0);
+}
+
+.portfolio-layer a {
   text-decoration: none;
-  margin: 20px 15px 30px 0;
-  transition: 0.5 ease;
-  background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: white;
-  opacity: 0;
-  animation: slideRight 1s ease forwards;
-  animation-delay: 0.2s;
 }
 
-.social-media a:hover {
-  background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
-}
-
-.btn {
-  display: inline-block;
+.portfolio-layer a h4 {
+  font-size: 1.563rem;
+  color: white;
   text-decoration: none;
-  padding: 12px 28px;
-  background: #1e30f3;
-  background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
-  border-radius: 2.5rem;
-  box-shadow: 0 0 20px #9913bb;
-  font-size: 1rem;
-  color: #fff;
-  letter-spacing: 1px;
-  opacity: 0;
-  animation: slideTop 1s ease forwards;
-  animation-delay: 0.4s;
+  position: relative;
 }
 
-.btn:hover {
-  color: #cfcbcb;
-  transform: scale(1.1);
+.portfolio-layer a p {
+  font-size: 1.063rem;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+audio {
+  height: 2rem;
 }
 
 @keyframes slideRight {
@@ -290,900 +172,29 @@ body {
   }
 }
 
-.portfolio {
-  background: #000000;
-  color: #fff;
-  animation: slideTop 1s;
-  position: relative;
-}
-
-.portfolio h2 {
-  background: linear-gradient(#1e30f3 0%, #e21e80 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: center;
-  position: relative;
-}
-
-.portfolio-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  margin-left: 4.375rem;
-  margin-right: 4.375rem;
-  gap: 2.5rem;
-}
-
-.portfolio-container .portfolio-box {
-  position: relative;
-  box-shadow: 0 0 1rem #9913bb;
-  border-radius: 2rem;
-  max-width: 100%;
-  overflow: hidden;
-  display: flex;
-}
-
-.portfolio-box img {
-  width: 100%;
-
-  transition: 0.5s ease;
-}
-
-.portfolio-box:hover img {
-  transform: scale(1.7);
-}
-
-.portfolio-box .portfolio-layer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
-  display: flex;
-  text-decoration: none;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 4rem;
-  transform: translateY(100%);
-  transition: 0.5 ease;
-}
-
-.portfolio-box:hover .portfolio-layer {
-  transform: translateY(0);
-}
-
-.portfolio-layer a {
-  text-decoration: none;
-}
-
-.portfolio-layer a h4 {
-  font-size: 1.563rem;
-  color: white;
-  text-decoration: none;
-  position: relative;
-}
-
-.portfolio-layer a p {
-  font-size: 1.063rem;
-  color: white;
-  text-decoration: none;
-  position: relative;
-}
-
-@media only screen and (max-width: 500px) {
-  .sound {
-    margin-top: -1rem;
-    margin-left: 1px;
-    align-items: center;
-    width: 10px;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 2.5rem;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    position: relative;
-  }
-
-  .header {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: #fff;
-    padding: 1.563rem 10%;
-    background: transparent;
-    display: inline-block;
-    align-items: center;
-    z-index: 100;
-  }
-
+/* Bootstrap responsive classes */
+@media (max-width: 991.98px) {
   .navbar {
-    font-size: 1.25rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    display: inline-block;
-    padding: 80px 10%;
-    transition: 0.3s;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
+    padding: 1rem 5%;
   }
 
-  .navbar .badge {
-    display: none;
-    font-size: 1rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    align-items: center;
-    padding: 10px 10%;
-    transition: 0.3s;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
+  .badge-custom {
+    font-size: 1.2rem;
   }
 
-  .home {
-    position: relative;
-    width: 100%;
-    top: -120px;
-    display: inline-block;
-    height: auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10% 0;
+  .home-content h3 {
+    font-size: 2.5rem;
   }
 
   .home-content h1 {
     font-size: 2rem;
-    font-weight: 700;
-    margin: -3px 0;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
-    animation-delay: 0.2s;
-    position: relative;
-  }
-
-  .home-content {
-    max-width: 20rem;
-    color: #fff;
-    position: relative;
-  }
-
-  .home-content p {
-    font-size: 1.2rem;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: 0.2s;
-    position: relative;
-  }
-
-  .home-img img {
-    top: 70px;
-    align-items: center;
-    display: block;
-    position: relative;
-    max-width: 20rem;
-    border-radius: 1.875rem;
-  }
-
-  .portfolio h2 {
-    background: linear-gradient(#1e30f3 0%, #e21e80 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-size: 2.5rem;
-    font-weight: 700;
-    text-align: center;
-    position: relative;
-  }
-
-  .portfolio-container {
-    width: 25rem;
-    display: inline-block;
-    margin-left: 10px;
-  }
-
-  .portfolio-container .portfolio-box {
-    position: relative;
-    box-shadow: 0 0 1rem #9913bb;
-    border-radius: 2rem;
-    max-width: 100%;
-    margin-top: 35px;
-    overflow: hidden;
-    display: flex;
-  }
-
-  .portfolio-box img {
-    width: 100%;
-    transition: 0.5s ease;
-  }
-
-  .portfolio-box:hover img {
-    transform: scale(1.7);
-  }
-
-  .portfolio-box .portfolio-layer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
-    transition: 0.5 ease;
-  }
-
-  .portfolio-box:hover .portfolio-layer {
-    transform: translateY(0);
-  }
-
-  .portfolio-layer a {
-    text-decoration: none;
-  }
-
-  .portfolio-layer a h4 {
-    font-size: 1.563rem;
-    color: white;
-    text-decoration: none;
-    position: relative;
-  }
-
-  .portfolio-layer a p {
-    font-size: 1.063rem;
-    color: white;
-    text-decoration: none;
-    position: relative;
   }
 }
 
-@media only screen and (min-width: 501px) and (max-width: 700px) {
-  .header {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: #fff;
-    padding: 1.563rem 10%;
-    background: transparent;
-    display: inline-block;
-    align-items: center;
-    z-index: 100;
-  }
-
-  .navbar .badge {
-    display: none;
-    font-size: 1rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    align-items: center;
-    padding: 10px 10%;
-    transition: 0.3s;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
-  }
-
-  .home {
-    position: relative;
-    width: 100%;
-    top: -120px;
-    display: inline-block;
-    height: auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10% 0;
-  }
-
-  .home-content h3 {
-    font-size: 4rem;
-    font-weight: 700;
-    margin: -3px 0;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
-    animation-delay: 0.2s;
-    position: relative;
-  }
-
-  .home-content h1 {
-    font-size: 2.3rem;
-    font-weight: 700;
-    margin: -3px 0;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
-    animation-delay: 0.2s;
-    position: relative;
-  }
-
-  .home-content {
-    max-width: 25rem;
-    color: #fff;
-    position: relative;
-  }
-
-  .home-content p {
-    font-size: 1.4rem;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: 0.2s;
-    position: relative;
-  }
-
-  .home-img img {
-    top: 70px;
-    align-items: center;
-    display: block;
-    position: relative;
-    max-width: 25rem;
-    border-radius: 1.875rem;
-  }
-
-  .portfolio h2 {
-    background: linear-gradient(#1e30f3 0%, #e21e80 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-size: 2.7rem;
-    font-weight: 700;
-    text-align: center;
-    position: relative;
-  }
-
-  .portfolio-container {
-    width: 25rem;
-    display: inline-block;
-    margin-left: 50px;
-  }
-
-  .portfolio-container .portfolio-box {
-    position: relative;
-    box-shadow: 0 0 1rem #9913bb;
-    border-radius: 2rem;
-    max-width: 100%;
-    margin-top: 35px;
-    overflow: hidden;
-    display: flex;
-  }
-
-  .portfolio-box img {
-    width: 100%;
-    transition: 0.5s ease;
-  }
-
-  .portfolio-box:hover img {
-    transform: scale(1.7);
-  }
-
-  .portfolio-box .portfolio-layer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
-    transition: 0.5 ease;
-  }
-
-  .portfolio-box:hover .portfolio-layer {
-    transform: translateY(0);
-  }
-
-  .portfolio-layer a {
-    text-decoration: none;
-  }
-
-  .portfolio-layer a h4 {
-    font-size: 1.563rem;
-    color: white;
-    text-decoration: none;
-    position: relative;
-  }
-
-  .portfolio-layer a p {
-    font-size: 1.063rem;
-    color: white;
-    text-decoration: none;
-    position: relative;
+@media (max-width: 767.98px) {
+  .portfolio-item {
+    margin-bottom: 1.5rem;
   }
 }
 
-@media only screen and (min-width: 701px) and (max-width: 800px) {
-  .header {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: #fff;
-    padding: 1.563rem 10%;
-    background: transparent;
-    display: inline-block;
-    align-items: center;
-    z-index: 100;
-  }
-
-  .navbar .badge {
-    display: none;
-    font-size: 1rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    align-items: center;
-    padding: 10px 10%;
-    transition: 0.3s;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
-  }
-
-  .home {
-    position: relative;
-    width: 100%;
-    top: -120px;
-    display: inline-block;
-    height: auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10% 0;
-  }
-
-  .home-content h3 {
-    font-size: 4.5rem;
-    font-weight: 700;
-    margin: -3px 0;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
-    animation-delay: 0.2s;
-    position: relative;
-  }
-
-  .home-content h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin: -3px 0;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
-    animation-delay: 0.2s;
-    position: relative;
-  }
-
-  .home-content {
-    max-width: 100rem;
-    color: #fff;
-    position: relative;
-  }
-
-  .home-content p {
-    font-size: 1.6rem;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: 0.2s;
-    position: relative;
-  }
-
-  .home-img img {
-    top: 70px;
-    align-items: center;
-    display: block;
-    position: relative;
-    max-width: 35rem;
-    border-radius: 1.875rem;
-  }
-
-  .portfolio h2 {
-    background: linear-gradient(#1e30f3 0%, #e21e80 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-size: 2.9rem;
-    font-weight: 700;
-    text-align: center;
-    position: relative;
-  }
-
-  .portfolio-container {
-    width: 27rem;
-    display: inline-block;
-    margin-left: 140px;
-  }
-
-  .portfolio-container .portfolio-box {
-    position: relative;
-    box-shadow: 0 0 1rem #9913bb;
-    border-radius: 2rem;
-    max-width: 100%;
-    margin-top: 35px;
-    overflow: hidden;
-    display: flex;
-  }
-
-  .portfolio-box img {
-    width: 100%;
-    transition: 0.5s ease;
-  }
-
-  .portfolio-box:hover img {
-    transform: scale(1.7);
-  }
-
-  .portfolio-box .portfolio-layer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
-    transition: 0.5 ease;
-  }
-
-  .portfolio-box:hover .portfolio-layer {
-    transform: translateY(0);
-  }
-
-  .portfolio-layer a {
-    text-decoration: none;
-  }
-
-  .portfolio-layer a h4 {
-    font-size: 1.563rem;
-    color: white;
-    text-decoration: none;
-    position: relative;
-  }
-
-  .portfolio-layer a p {
-    font-size: 1.063rem;
-    color: white;
-    text-decoration: none;
-    position: relative;
-  }
-}
-
-@media only screen and (min-width: 801px) and (max-width: 900px) {
-  .header {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: #fff;
-    padding: 1.563rem 10%;
-    background: transparent;
-    display: inline-block;
-    align-items: center;
-    z-index: 100;
-  }
-
-  .navbar .badge {
-    display: none;
-    font-size: 1rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    align-items: center;
-    padding: 10px 10%;
-    transition: 0.3s;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
-  }
-
-  .home {
-    position: relative;
-    width: 100%;
-    top: -120px;
-    display: inline-block;
-    height: auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10% 0;
-  }
-
-  .home-content h3 {
-    font-size: 4.5rem;
-    font-weight: 700;
-    margin: -3px 0;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
-    animation-delay: 0.2s;
-    position: relative;
-  }
-
-  .home-content h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin: -3px 0;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
-    animation-delay: 0.2s;
-    position: relative;
-  }
-
-  .home-content {
-    max-width: 100rem;
-    color: #fff;
-    position: relative;
-  }
-
-  .home-content p {
-    font-size: 1.6rem;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: 0.2s;
-    position: relative;
-  }
-
-  .home-img img {
-    top: 70px;
-    align-items: center;
-    display: block;
-    position: relative;
-    max-width: 32rem;
-    border-radius: 1.875rem;
-  }
-
-  .portfolio h2 {
-    background: linear-gradient(#1e30f3 0%, #e21e80 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-size: 3.2rem;
-    font-weight: 700;
-    text-align: center;
-    position: relative;
-  }
-
-  .portfolio-container {
-    width: 30rem;
-    display: inline-block;
-    margin-left: 170px;
-  }
-
-  .portfolio-container .portfolio-box {
-    position: relative;
-    box-shadow: 0 0 1rem #9913bb;
-    border-radius: 2rem;
-    max-width: 100%;
-    margin-top: 35px;
-    overflow: hidden;
-    display: flex;
-  }
-
-  .portfolio-box img {
-    width: 100%;
-    transition: 0.5s ease;
-  }
-
-  .portfolio-box:hover img {
-    transform: scale(1.7);
-  }
-
-  .portfolio-box .portfolio-layer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
-    transition: 0.5 ease;
-  }
-
-  .portfolio-box:hover .portfolio-layer {
-    transform: translateY(0);
-  }
-
-  .portfolio-layer a {
-    text-decoration: none;
-  }
-
-  .portfolio-layer a h4 {
-    font-size: 1.563rem;
-    color: white;
-    text-decoration: none;
-    position: relative;
-  }
-
-  .portfolio-layer a p {
-    font-size: 1.1rem;
-    color: white;
-    text-decoration: none;
-    position: relative;
-  }
-}
-
-@media only screen and (min-width: 901px) and (max-width: 1200px) {
-  .header {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: #fff;
-    padding: 1.563rem 10%;
-    background: transparent;
-    display: inline-block;
-    align-items: center;
-    z-index: 100;
-  }
-
-  .navbar .badge {
-    display: none;
-    font-size: 1rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    align-items: center;
-    padding: 10px 10%;
-    transition: 0.3s;
-    opacity: 0;
-    animation: slideTop 1s ease forwards;
-  }
-
-  .home {
-    position: relative;
-    width: 100%;
-    top: -120px;
-    display: inline-block;
-    height: auto;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10% 0;
-  }
-
-  .home-content h3 {
-    font-size: 4.5rem;
-    font-weight: 700;
-    margin: -3px 0;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
-    animation-delay: 0.2s;
-    position: relative;
-  }
-
-  .home-content h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin: -3px 0;
-    opacity: 0;
-    animation: slideRight 1s ease forwards;
-    animation-delay: 0.2s;
-    position: relative;
-  }
-
-  .home-content {
-    max-width: 100rem;
-    color: #fff;
-    position: relative;
-  }
-
-  .home-content p {
-    font-size: 1.6rem;
-    animation: slideLeft 1s ease forwards;
-    animation-delay: 0.2s;
-    position: relative;
-  }
-
-  .home-img {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    width: 100%; /* Ensures it takes full width */
-  }
-
-  .home-img img {
-    top: 70px;
-    max-width: 32rem;
-    border-radius: 1.875rem;
-    display: block;
-    margin: 0 auto; /* Centers horizontally */
-    position: relative;
-  }
-
-  .portfolio h2 {
-    background: linear-gradient(#1e30f3 0%, #e21e80 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    font-size: 3.2rem;
-    font-weight: 700;
-    text-align: center;
-    position: relative;
-  }
-
-  .portfolio-container {
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    gap: 1.8rem;
-    width: 57rem;
-    margin: 0 auto; /* Center the container */
-  }
-
-  .portfolio-container .portfolio-box {
-    position: relative;
-    box-shadow: 0 0 1rem #9913bb;
-    border-radius: 2rem;
-    max-width: 100%;
-    margin-top: 35px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center; /* Center content inside */
-    align-items: center;
-  }
-}
-.portfolio-box img {
-  width: 100%;
-  transition: 0.5s ease;
-}
-
-.portfolio-box:hover img {
-  transform: scale(1.7);
-}
-
-.portfolio-box .portfolio-layer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
-  display: flex;
-  text-decoration: none;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 0 4rem;
-  transform: translateY(100%);
-  transition: 0.5 ease;
-}
-
-.portfolio-box:hover .portfolio-layer {
-  transform: translateY(0);
-}
-
-.portfolio-layer a {
-  text-decoration: none;
-}
-
-.portfolio-layer a h4 {
-  font-size: 1.5rem;
-  color: white;
-  text-decoration: none;
-  position: relative;
-}
-
-.portfolio-layer a p {
-  font-size: 1.1rem;
-  color: white;
-  text-decoration: none;
-  position: relative;
-}
+/* Reverting the styles.css file to its previous state before the recent changes */
