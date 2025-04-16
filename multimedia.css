@@ -31,12 +31,12 @@ body {
   font-weight: 400;
 }
 
+/* Portfolio section */
 .portfolio-section {
   background: #000000;
   color: #fff;
   animation: slideTop 1s;
   position: relative;
-  padding: 2rem 0;
 }
 
 .section-heading {
@@ -44,20 +44,22 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   text-align: center;
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
+/* Portfolio items */
 .portfolio-item {
   position: relative;
   box-shadow: 0 0 1rem #9913bb;
   border-radius: 2rem;
   overflow: hidden;
   display: flex;
-  margin-bottom: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 3rem;
   height: 250px;
 }
 
@@ -80,12 +82,11 @@ body {
   height: 100%;
   background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
   display: flex;
-  text-decoration: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 0 4rem;
+  padding: 0 2rem;
   transform: translateY(100%);
   transition: 0.5s ease;
 }
@@ -96,26 +97,24 @@ body {
 
 .portfolio-layer a {
   text-decoration: none;
+  color: white;
 }
 
 .portfolio-layer a h4 {
-  font-size: 1.563rem;
-  color: white;
-  text-decoration: none;
-  position: relative;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
 }
 
 .portfolio-layer a p {
-  font-size: 1.063rem;
-  color: white;
-  text-decoration: none;
-  position: relative;
+  font-size: 1rem;
 }
 
+/* Audio element */
 audio {
   height: 2rem;
 }
 
+/* Animations */
 @keyframes slideRight {
   0% {
     transform: translateX(-100px);
@@ -172,16 +171,8 @@ audio {
   }
 }
 
-/* Bootstrap responsive classes */
+/* Responsive adjustments using Bootstrap breakpoints */
 @media (max-width: 991.98px) {
-  .navbar {
-    padding: 1rem 5%;
-  }
-
-  .badge-custom {
-    font-size: 1.2rem;
-  }
-
   .home-content h3 {
     font-size: 2.5rem;
   }
@@ -189,12 +180,23 @@ audio {
   .home-content h1 {
     font-size: 2rem;
   }
-}
 
-@media (max-width: 767.98px) {
-  .portfolio-item {
-    margin-bottom: 1.5rem;
+  .badge-custom {
+    font-size: 1.1rem;
   }
 }
 
-/* Reverting the styles.css file to its previous state before the recent changes */
+@media (max-width: 767.98px) {
+  .home-content {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .social-media {
+    justify-content: center;
+  }
+
+  .section-heading {
+    font-size: 2.5rem;
+  }
+}
