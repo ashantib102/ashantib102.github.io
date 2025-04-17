@@ -13,13 +13,6 @@
   font-style: normal;
 }
 
-.josefin-sans-bold {
-  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
 /* Base Styles */
 body {
   font-family: "Josefin Sans", sans-serif;
@@ -365,5 +358,10 @@ audio {
 
   .section-heading {
     font-size: 2.5rem;
+  }
+
+  /* Add spacing between sound button and badge-custom on smaller screens when navbar toggler is active */
+  .navbar .collapse .badge-custom {
+    margin-top: 1rem; /* Add space between sound button and badge */
   }
 }
