@@ -269,9 +269,194 @@ body {
   font-size: 1rem;
 }
 
-/* Audio element */
-audio {
-  height: 2rem;
+/* Skills section custom styles */
+.skills-section {
+  background: #000;
+  color: #fff;
+  padding: 4rem 0 2rem 0;
+  margin-bottom: 3rem;
+}
+
+.skills-section .card {
+  background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+  color: #fff;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  box-shadow: 0 0 20px #9913bb;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: visible;
+  min-height: unset;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.skills-section .card:hover {
+  transform: translateY(-10px) scale(1.04);
+  box-shadow: 0 0 40px #e21e80, 0 0 20px #1e30f3;
+}
+
+.skills-section .card-body {
+  padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.skills-section ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.skills-section ul li {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0.3rem 0.7rem 0;
+  padding: 0.4rem 1.2rem 0.4rem 0.8rem;
+  border-radius: 0.2rem;
+  background: transparent;
+  color: #e0e6ed;
+  letter-spacing: 1px;
+  box-shadow: none;
+  border: 2px solid transparent;
+  transition: background 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s,
+    border 0.3s;
+  cursor: pointer;
+  position: relative;
+  min-width: 110px;
+  justify-content: center;
+}
+
+.skills-section ul li:active {
+  filter: brightness(0.92) saturate(1.2);
+  transform: scale(0.97);
+}
+
+.skills-section ul li:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 0 10px #e21e80;
+  border: 2px solid #e21e80;
+  z-index: 2;
+}
+
+/* Custom badge colors for each skill */
+.skill-python {
+  background: #306998;
+  color: #fff;
+}
+.skill-html {
+  background: #e44d26;
+  color: #fff;
+}
+.skill-css {
+  background: #2965f1;
+  color: #fff;
+}
+.skill-javascript {
+  background: #f7df1e;
+  color: #222;
+  border-color: #222;
+}
+.skill-java {
+  background: #3572a5;
+  color: #fff;
+}
+.skill-sql {
+  background: #336791;
+  color: #fff;
+}
+.skill-matlab {
+  background: #0076a8;
+  color: #fff;
+}
+.skill-bootstrap {
+  background: #563d7c;
+  color: #fff;
+}
+.skill-sqlite {
+  background: #003b57;
+  color: #fff;
+}
+.skill-postgresql {
+  background: #336791;
+  color: #fff;
+}
+.skill-node {
+  background: #3c873a;
+  color: #fff;
+}
+.skill-react {
+  background: #222;
+  color: #61dafb;
+}
+.skill-springboot {
+  background: #6db33f;
+  color: #fff;
+}
+.skill-numpy {
+  background: #013243;
+  color: #fff;
+}
+.skill-pandas {
+  background: #150458;
+  color: #fff;
+}
+.skill-seaborn {
+  background: #43b7ba;
+  color: #fff;
+}
+.skill-powerbi {
+  background: #f2c811;
+  color: #222;
+}
+.skill-tableau {
+  background: #e97627;
+  color: #fff;
+}
+.skill-jupyter {
+  background: #f37626;
+  color: #fff;
+}
+.skill-figma {
+  background: #a259ff;
+  color: #fff;
+}
+.skill-canva {
+  background: #00c4cc;
+  color: #fff;
+}
+.skill-gitbash {
+  background: #353535;
+  color: #fff;
+}
+.skill-github {
+  background: #24292e;
+  color: #fff;
+}
+.skill-msoffice {
+  background: #ea3e23;
+  color: #fff;
+}
+.skill-google {
+  background: #4285f4;
+  color: #fff;
+}
+.skill-adobe {
+  background: #ff0000;
+  color: #fff;
+}
+
+.skills-section ul li .skill-icon {
+  margin-right: 0.6em;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
 }
 
 /* Animations */
@@ -331,7 +516,6 @@ audio {
   }
 }
 
-/* Responsive adjustments using Bootstrap breakpoints */
 @media (max-width: 991.98px) {
   .home-content h3 {
     font-size: 2.5rem;
@@ -343,6 +527,20 @@ audio {
 
   .badge-custom {
     font-size: 1.1rem;
+  }
+
+  .skills-section .card-title {
+    font-size: 1.2rem;
+  }
+
+  .skills-group-title {
+    font-size: 1.1rem;
+  }
+
+  .skills-section ul li {
+    font-size: 1rem;
+    min-width: 90px;
+    padding: 0.3rem 0.8rem 0.3rem 0.6rem;
   }
 }
 
@@ -360,8 +558,23 @@ audio {
     font-size: 2.5rem;
   }
 
+  .skills-section {
+    padding: 2rem 0 1rem 0;
+  }
+
   /* Add spacing between sound button and badge-custom on smaller screens when navbar toggler is active */
   .navbar .collapse .badge-custom {
     margin-top: 1rem; /* Add space between sound button and badge */
   }
+
+  .skills-section ul li {
+    font-size: 0.95rem;
+    min-width: 80px;
+    padding: 0.2rem 0.6rem 0.2rem 0.5rem;
+  }
+}
+
+/* Audio element */
+audio {
+  height: 2rem;
 }
